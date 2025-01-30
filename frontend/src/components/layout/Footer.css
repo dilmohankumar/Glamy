@@ -1,0 +1,221 @@
+/* General Footer Styles */
+.footer-body {
+  background-color: #000000;
+  color: #fff;
+  padding: 0 6rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  font-family: Arial, sans-serif;
+}
+.footer-app-image {
+  width: 8.5rem;
+  height: 5rem;
+}
+.footer-social-list {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  gap: 20px;
+  padding: 0;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-social-list .footer-social-icon {
+  width: 30px;
+  height: auto;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.footer-social-list .footer-social-icon:hover {
+  transform: scale(1.1);
+}
+
+/* Responsive Layout for Acceptance Icons */
+.footer-accept-list {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  padding: 0;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-accept-list img {
+  width: 3.5rem;
+  height: auto;
+  transition: opacity 0.3s ease;
+}
+
+.footer-accept-list img:hover {
+  opacity: 0.8;
+}
+
+.footer-accept-item {
+  list-style: none;
+}
+
+/* Responsive Layout for Certification Icons */
+.footer-certification-list {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  padding: 0;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-certification-list img {
+  width: auto;
+  height: 2.1rem;
+  transition: transform 0.3s ease;
+}
+
+.footer-certification-list img:hover {
+  transform: translateY(-5px);
+}
+
+.footer-certification-item {
+  list-style: none;
+}
+
+/* Responsive Design for Smaller Screens */
+@media (max-width: 768px) {
+  .footer-social-list,
+  .footer-accept-list,
+  .footer-certification-list {
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+  }
+
+  .footer-social-list .footer-social-icon {
+    width: 25px;
+  }
+
+  .footer-accept-list img {
+    width: 3rem;
+  }
+
+  .footer-certification-list img {
+    height: 1.8rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .footer-social-list .footer-social-icon {
+    width: 20px;
+  }
+
+  .footer-accept-list img {
+    width: 2.5rem;
+  }
+
+  .footer-certification-list img {
+    height: 1.5rem;
+  }
+}
+
+.footer-container-items,
+.footer-container-items-2,
+.footer-container-items-3,
+.footer-container-items-4 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.footer-title {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 23.44px;
+}
+
+.footer-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-list-item {
+  font-weight: 300;
+  letter-spacing: 0.5px;
+  margin-top: 16px;
+  font-size: 14px;
+  margin-bottom: 5px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.footer-list-item:hover {
+  color: #00feff;
+}
+
+.footer-input {
+  padding: 10px;
+  width: 100%;
+  max-width: 250px;
+  border: 1px solid white;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  background: transparent;
+  color: white;
+  font-weight: 500;
+  font-family: sans-serif;
+  outline: none;
+}
+
+.footer-button {
+  padding: 10px 20px;
+  background-color: transparent;
+  color: #fff;
+  border: white 1px solid;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 700;
+  transition: background-color 0.3s;
+}
+
+/* Footer Rights Section */
+.footer-rights,
+.footer-email {
+  font-size: 12px;
+  text-align: center;
+  margin: 5px 0;
+}
+
+.footer-email {
+  flex: 1;
+  text-align: right;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .footer-container-items,
+  .footer-container-items-2,
+  .footer-container-items-3,
+  .footer-container-items-4 {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .footer-rights,
+  .footer-email {
+    text-align: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .footer-input {
+    width: 90%;
+  }
+
+  .footer-button {
+    width: 90%;
+  }
+}
