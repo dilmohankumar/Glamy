@@ -5,12 +5,23 @@ import glob from "../../src/assets/images/glob.svg";
 import three from "../../src/assets/images/three.svg";
 import twentyseven from "../../src/assets/images/twentyseven.svg";
 import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Navigation, Pagination, Autoplay } from "swiper/modules";
+import "swiper/css";
+import "swiper/css/navigation";
+import "swiper/css/pagination";
+
+const slides = [
+  { id: 1, img: require("../assets/images/banner1.jpg") },
+  { id: 2, img: require("../assets/images/banner2.jpg") },
+
+];
 
 const Home = () => {
   const [products, setProducts] = useState(null);
   const [products1, setProducts1] = useState(null);
   const [loading, setLoading] = useState(true);
-  const [filter, setFilter] = useState("All");
+  const [ setFilter] = useState("All");
 
   useEffect(() => {
     fetch("http://localhost:4000/api/products")
@@ -34,6 +45,26 @@ const Home = () => {
 
   return (
    <>
+          <div className="relativeswipp">
+      <Swiper
+        modules={[Navigation, Pagination, Autoplay]}
+        navigation
+        pagination={{ clickable: true }}
+        autoplay={{ delay: 3000, disableOnInteraction: false }}
+        loop={true}
+        className="sliderrr"
+      >
+        {slides.map((slide) => (
+          <SwiperSlide key={slide.id}>
+            <img
+              src={slide.img}
+              alt={`Slide ${slide.id}`}
+              className="imgbanner"
+            />
+          </SwiperSlide>
+        ))}
+      </Swiper>
+    </div>
           <div className="recommended-header1">
           <h1 className="header-title" style={{ margin: 0}}>Coldest Brands</h1>
            <div className="home-body-banner-arrow">

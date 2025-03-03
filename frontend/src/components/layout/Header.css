@@ -1,23 +1,64 @@
-.header-parent-body{
-  
+.header-subcategory-p {
+  display: block;
+  top: 2rem;
+  position: absolute;
+  background: black;
+  width: 100%;
+  height: auto;
+ 
+  left: 0;
+  line-height: 300%;
 }
+.header-subcategory-category{
+  color: rgb(119, 255, 0);
+}
+.parent-header-c {
+  display: flex;
+  flex-direction: row;
+  /* align-items: center;
+  text-align: center; */
+  justify-content: center;
+  gap: 8rem;
+  cursor:default;
+ 
+  flex-basis: 50%;
+  padding: 2rem;
+}
+.subcategory-item {
+  list-style: none;
+}
+.subcategory-item a{
+color: white;
+text-decoration: none;
+}
+.subcategory-item a:hover{
+
+text-decoration:underline;
+
+color: #00feff;
+}
+.subcategory-list {
+  padding: 0;
+  
+
+}
+
 .header-body {
-    position: sticky;
-    z-index: 100;
-    top: 0;
+  position: sticky;
+  z-index: 100;
+  top: 0;
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 10px 20px;
   background-color: #000000;
-  
+
   top: 0;
   font-weight: 500;
   gap: 2rem;
   font-family: Roboto, Helvetica Neue, Helvetica, Tahoma, Arial, sans-serif,
     -apple-system, BlinkMacSystemFont, Segoe UI, Oxygen, Ubuntu, Cantarell,
     Fira Sans, Droid Sans;
-  
 }
 
 .header-logo {
@@ -114,6 +155,10 @@
   color: #00feff;
   font-weight: bolder;
 }
+.header-category {
+  color: #ffffff;
+  font-weight: bolder;
+}
 
 .header-profile,
 .header-wishlist {
@@ -155,16 +200,16 @@
   font-weight: 400;
   font-size: 10px;
 }
-.header-profile .header-icon-z{
-    width: 30px;
-    height: auto;
+.header-profile .header-icon-z {
+  width: 30px;
+  height: auto;
 }
-.header-wishlist  .header-icon-z{
-    width: 30px;
-    height: auto;
+.header-wishlist .header-icon-z {
+  width: 30px;
+  height: auto;
 }
-.header-body-banner-arrow .header-body-banner-arrow-icon{
-  width: 15px ;
+.header-body-banner-arrow .header-body-banner-arrow-icon {
+  width: 15px;
   height: 15px;
 }
 .header-body-banner-arrow {
@@ -206,5 +251,26 @@
     flex: 1 1 auto;
     text-align: center;
     font-weight: 500;
+  }
+}
+
+@media (max-width: 1210px) {
+  .parent-header-c{
+    gap: 4rem;
+  }
+}
+@media (max-width: 950px) {
+  .parent-header-c {
+      gap: 2rem;
+      font-size: 12px;
+      padding: 0px 20px 0px 20px;
+  }
+}
+
+@media (max-width: 720px) {
+  .parent-header-c {
+      gap: 1rem;
+      font-size: 10px;
+      padding: 0px 20px 0px 20px;
   }
 }

@@ -1,19 +1,39 @@
-import React from "react";
-import "./App.css";
-import Header from "./components/layout/Header";
-import Footer from "./components/layout/Footer";
-import Home from "./pages/Home";
+import React from 'react';
+import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
+import './App.css';
 
-function App() {
-  return ( 
-    <div className="App">
-      <Header />
-    
-        <Home />
+// Importing layout components
+import Header from './components/layout/Header';
+import Footer from './components/layout/Footer';
 
-      <Footer />
-    </div>
+// Importing page components
+import Home from './pages/Home';
+import About from './pages/About';
+
+const App = () => {
+  return (
+    <Router>
+      <main className="container">
+        <Routes>
+          <Route path="/" element={<Navigate to="/home" />} />
+          <Route path="/home" element={
+            <>
+              <Header />
+              <Home />
+              <Footer />
+            </>
+          } />
+          <Route path="/about" element={
+            <>
+              <Header />
+              <About />
+              <Footer />
+            </>
+          } />
+        </Routes>
+      </main>
+    </Router>
   );
-}
+};
 
 export default App;
