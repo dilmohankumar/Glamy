@@ -153,11 +153,19 @@ color: #00feff;
 
 .header-category:hover {
   color: #00feff;
+  text-decoration: underline;
+}
+.header-category a:hover {
+  color: #00feff;
   font-weight: bolder;
 }
 .header-category {
   color: #ffffff;
   font-weight: bolder;
+}
+.header-category a{
+  color: #ffffff;
+  text-decoration: none;
 }
 
 .header-profile,

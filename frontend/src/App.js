@@ -9,6 +9,7 @@ import Footer from './components/layout/Footer';
 // Importing page components
 import Home from './pages/Home';
 import About from './pages/About';
+import OnlineAuth from './pages/OnlineAuth';
 
 const App = () => {
   return (
@@ -27,6 +28,13 @@ const App = () => {
             <>
               <Header />
               <About />
+              <Footer />
+            </>
+          } />
+          <Route path="/OnlineAuth" element={
+            <>
+              <Header />
+              <OnlineAuth />
               <Footer />
             </>
           } />

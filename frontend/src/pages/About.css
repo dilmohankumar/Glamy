@@ -1,0 +1,134 @@
+.about-container-header {
+  background-image: url("../assets/images/about1.webp");
+  color: white;
+  padding: 4rem;
+}
+.about-container-header-span {
+  color: rgb(16, 187, 230);
+}
+.about-header-class {
+  font-size: 3rem;
+}
+.about-header-class-p {
+  font-size: large;
+}
+.authentication-header {
+  background: black;
+  margin: 0;
+  color: rgb(16, 187, 230);
+  padding: 2rem;
+  font-size: xx-large;
+  padding-left: 4rem;
+}
+@media (max-width: 768px) {
+  .authentication-header {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .authentication-header {
+    font-size: 18px;
+  }
+}
+.verification-process-container {
+  display: flex;
+  flex-direction: row;
+}
+.verification-process-item {
+  display: flex;
+  flex-direction: column;
+}
+.verification-process-item-img {
+  display: flex;
+  flex-direction: column;
+}
+.verification-process-container {
+  padding: 2rem;
+  padding-left: 4rem;
+  background: black;
+  color: white;
+  gap: 10rem;
+}
+.verification-process-item-img {
+  gap: 1rem;
+}
+.verification-header {
+  font-size: -webkit-xxx-large;
+  margin: 0;
+  padding-bottom: 2rem;
+}
+.verification-step {
+  margin: 0;
+  font-size: large;
+  padding-bottom: 10px;
+  letter-spacing: 1px;
+}
+.authentication-experts {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 2rem;
+  padding-left: 4rem;
+  padding-right: 4rem;
+  background: black;
+  color: azure;
+}
+.authentication-experts-header {
+  font-size: xx-large;
+}
+.authentication-experts-paragraph {
+  font-size: medium;
+}
+@media (max-width: 1000px) {
+  .verification-process-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  .verification-header {
+    font-size: xx-large;
+  }
+  .authentication-experts {
+    display: flex;
+    flex-direction: column;
+  }
+ 
+}
+
+.state-of-the-art-lab-container{
+    display: flex;
+    flex-direction: column;
+}
+.state-of-the-art-lab{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 2rem;
+    padding-left: 4rem;
+    padding-right: 4rem;
+    background-color: black;
+    color: white;
+
+}
+.state-of-the-art-lab-header{
+    font-size: xxx-large;
+}
+.state-of-the-art-lab-paragraph{
+    font-size: larger;
+    letter-spacing: 1px;
+    line-height: 2rem;
+}
+.state-of-the-art-lab-test{
+    font-style: italic;
+}
+@media screen and (max-width: 1000px) {
+    .state-of-the-art-lab{
+        display: flex;
+        flex-direction: column;
+      }
+     .state-of-the-art-lab-image{
+        width: 100% !important;
+        height: auto;
+      }
+}

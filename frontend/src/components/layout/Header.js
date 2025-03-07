@@ -118,7 +118,7 @@ const Header = () => {
             </div>
             </div>
           </div>
-          <div className="header-category">Online auth</div>
+          <div className="header-category"><Link to={"/OnlineAuth"}>Online auth</Link></div>
          <Link to={'/about'}> <div className="header-category">About Us</div></Link>
           <div className="header-category">Sell on Glamy</div>
           <div className="header-category">Glamy Blog</div>
