@@ -7,6 +7,7 @@ import About5 from "../assets/images/about5.webp";
 import About6 from "../assets/images/about6.webp";
 import About7 from "../assets/images/about7.webp";
 import About8 from "../assets/images/about8.webp";
+import About10 from "../assets/images/about10.jpg";
 import "./About.css";
 const About = () => {
   return (
@@ -31,40 +32,41 @@ const About = () => {
         </div>
         <div className="verification-process">
           <div className="verification-process-container">
-          <div className="verification-process-item">
-          <h2 className="verification-header">
-            MULTI-STEP
-            <br />
-            VERIFICATION
-          </h2>
-          <p className="verification-step">
-            01 <span className="verification-detail"> Quality Inspection</span>
-          </p>
-          <p className="verification-step">
-            02 <span className="verification-detail"> Authentication</span>
-          </p>
-          <p className="verification-step">
-            03{" "}
-            <span className="verification-detail">
-              {" "}
-              Packaging with Glamy Anti-counterfeit Kit
-            </span>
-          </p>
-          </div>
-          <div className="verification-process-item-img">
-          <img
-            className="verification-image"
-            alt=""
-            src={About2}
-            style={{ width: "80%", height: "auto" }}
-          ></img>
-          <img
-            className="verification-image"
-            alt=""
-            src={About3}
-            style={{ width: "80%", height: "auto" }}
-          ></img>
-          </div>
+            <div className="verification-process-item">
+              <h2 className="verification-header">
+                MULTI-STEP
+                <br />
+                VERIFICATION
+              </h2>
+              <p className="verification-step">
+                01{" "}
+                <span className="verification-detail"> Quality Inspection</span>
+              </p>
+              <p className="verification-step">
+                02 <span className="verification-detail"> Authentication</span>
+              </p>
+              <p className="verification-step">
+                03{" "}
+                <span className="verification-detail">
+                  {" "}
+                  Packaging with Glamy Anti-counterfeit Kit
+                </span>
+              </p>
+            </div>
+            <div className="verification-process-item-img">
+              <img
+                className="verification-image"
+                alt=""
+                src={About2}
+                style={{ width: "80%", height: "auto" }}
+              ></img>
+              <img
+                className="verification-image"
+                alt=""
+                src={About3}
+                style={{ width: "80%", height: "auto" }}
+              ></img>
+            </div>
           </div>
         </div>
         <div className="authentication-experts">
@@ -81,19 +83,21 @@ const About = () => {
         </div>
 
         <div className="state-of-the-art-lab">
-        <div className="state-of-the-art-lab-container">
-          <h1 className="state-of-the-art-lab-header">
-            STATE-OF-THE-
-            <br />
-            ART LAB
-          </h1>
-          <p className="state-of-the-art-lab-paragraph">
-            Our ILAC-MRA-recognized lab utilizes advanced
-            <br />
-            equipment to protect you from counterfeits.<br/>
-          <span className="state-of-the-art-lab-test">UV light box test</span>
-          </p>
-          
+          <div className="state-of-the-art-lab-container">
+            <h1 className="state-of-the-art-lab-header">
+              STATE-OF-THE-
+              <br />
+              ART LAB
+            </h1>
+            <p className="state-of-the-art-lab-paragraph">
+              Our ILAC-MRA-recognized lab utilizes advanced
+              <br />
+              equipment to protect you from counterfeits.
+              <br />
+              <span className="state-of-the-art-lab-test">
+                UV light box test
+              </span>
+            </p>
           </div>
           <img
             className="state-of-the-art-lab-image"
@@ -110,32 +114,37 @@ const About = () => {
           <br />
           ACCLAIMED BRANDS
         </h2>
-        <img
-          className="global-sourcing-image"
-          src={About4}
-          alt=""
-          style={{ width: "70%", height: "auto" }}
-        ></img>
-        <img
-          className="global-sourcing-image"
-          src={About5}
-          alt=""
-          style={{ width: "70%", height: "auto" }}
-        ></img>
+        <div className="global-sourcing-content-im">
+          <img
+            className="global-sourcing-image"
+            src={About4}
+            alt=""
+            style={{ width: "80%", height: "auto" }}
+          ></img>
+          <img
+            className="global-sourcing-image"
+            src={About5}
+            alt=""
+            style={{ width: "80%", height: "auto" }}
+          ></img>
+        </div>
+
         <div className="sourcing-countries-container">
           <h1 className="sourcing-countries-header">
             SOURCING FROM OVER
             <br />
-            18 COUNTRIES AND REGIONS
+            COUNTRIES AND REGIONS
           </h1>
+          <div className="sourcing-countries-content-imm">
           <img
             className="sourcing-countries-image"
             src={About6}
             alt=""
-            style={{ width: "70%", height: "auto" }}
-          ></img>
+            style={{ width: "90%", height: "auto" }}
+          ></img></div>
         </div>
       </div>
+      <div className="additional-content-container-p">
       <div className="payment-methods-container">
         <h1 className="payment-methods-header">
           ACCEPTED
@@ -147,6 +156,8 @@ const About = () => {
           <br />
           payment methods.
         </p>
+        </div>
+       <div className="payment-methods-container-p">
         <img
           className="payment-methods-image"
           src={About7}
@@ -159,10 +170,16 @@ const About = () => {
           alt=""
           style={{ width: "40%", height: "auto" }}
         ></img>
+        </div>
       </div>
 
       <div className="stay-with-poizon-container">
         <h1 className="stay-with-poizon-header">STAY WITH Glamy</h1>
+        <img
+          className="stay-with-poizon-image"
+          src={About10}
+          alt=""
+        ></img>
       </div>
 
       <div className="brand-history-container">

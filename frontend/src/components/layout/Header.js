@@ -33,10 +33,13 @@ const Header = () => {
   };
 
   return (
- <>
+    <>
       <div className="header-body">
-      <Link to={'/'}>  <div className="header-logo">Glamy</div></Link>
-        
+        <Link to={"/"}>
+          {" "}
+          <div className="header-logo">Glamy</div>
+        </Link>
+
         <div className="header-search-box">
           <div className="search-input">
             <input
@@ -48,11 +51,11 @@ const Header = () => {
               onInput={toggleClearButton}
             />
 
-<div className="search-icon">
-            <SearchIcon className="cseachi-icon-cross" />
+            <div className="search-icon">
+              <SearchIcon className="cseachi-icon-cross" />
+            </div>
           </div>
-          </div>
-         
+
           <button
             id="clearButton"
             className="clear-btn"
@@ -62,72 +65,151 @@ const Header = () => {
           >
             <ClearIcon />
           </button>
-       
         </div>
 
         <div className="header-categories">
-          <div className="header-category" onMouseEnter={() => setIsCategoryVisible(true)} onMouseLeave={() => setIsCategoryVisible(false)}>
+          <div
+            className="header-category"
+            onMouseEnter={() => setIsCategoryVisible(true)}
+            onMouseLeave={() => setIsCategoryVisible(false)}
+          >
             Categories
           </div>
-          <div className="header-subcategory-p" onMouseEnter={() => setIsCategoryVisible(true)} onMouseLeave={() =>  setIsCategoryVisible(false)} style={{ display: isCategoryVisible ? 'block' : 'none' }}>
-           <div className="parent-header-c">
-            <div className="header-subcategory-category"> Casual Shoes
-              <ul className="subcategory-list">
-                <li className="subcategory-item"><Link to="/adidas">Adidas</Link></li>
-                <li className="subcategory-item"><Link to="/nike">Nike</Link></li>
-                <li className="subcategory-item"><Link to="/converse">Converse</Link></li>
-                <li className="subcategory-item"><Link to="/vans">Vans</Link></li>
-                <li className="subcategory-item"><Link to="/new-balance">New Balance</Link></li>
-              </ul>
-            </div>
-            <div className="header-subcategory-category">Sports & Athletic Shoes
-              <ul className="subcategory-list">
-                <li className="subcategory-item"><Link to="/adidas">Adidas</Link></li>
-                <li className="subcategory-item"><Link to="/nike">Nike</Link></li>
-                <li className="subcategory-item"><Link to="/reebok">Reebok</Link></li>
-                <li className="subcategory-item"><Link to="/under-armour">Under Armour</Link></li>
-                <li className="subcategory-item"><Link to="/asics">ASICS</Link></li>
-              </ul>
-            </div>
-            <div className="header-subcategory-category">Formal Shoes
-              <ul className="subcategory-list">
-                <li className="subcategory-item"><Link to="/adidas">Adidas</Link></li>
-                <li className="subcategory-item"><Link to="/nike">Nike</Link></li>
-                <li className="subcategory-item"><Link to="/converse">Converse</Link></li>
-                <li className="subcategory-item"><Link to="/vans">Vans</Link></li>
-                <li className="subcategory-item"><Link to="/new-balance">New Balance</Link></li>
-              </ul>
-            </div>
-            <div className="header-subcategory-category">Boots
-              <ul className="subcategory-list">
-                <li className="subcategory-item"><Link to="/dr-martens">Dr. Martens</Link></li>
-                <li className="subcategory-item"><Link to="/timberland">Timberland</Link></li>
-                <li className="subcategory-item"><Link to="/ugg">UGG</Link></li>
-                <li className="subcategory-item"><Link to="/the-north-face">The North Face</Link></li>
-                <li className="subcategory-item"><Link to="/merrell">Merrell</Link></li>
-              </ul>
-            </div>
-            <div className="header-subcategory-category">Traditional & Cultural Shoes
-              <ul className="subcategory-list">
-                <li className="subcategory-item"><Link to="/dr-martens">Dr. Martens</Link></li>
-                <li className="subcategory-item"><Link to="/timberland">Timberland</Link></li>
-                <li className="subcategory-item"><Link to="/ugg">UGG</Link></li>
-                <li className="subcategory-item"><Link to="/the-north-face">The North Face</Link></li>
-                <li className="subcategory-item"><Link to="/merrell">Merrell</Link></li>
-              </ul>
-            </div>
+          <div
+            className="header-subcategory-p"
+            onMouseEnter={() => setIsCategoryVisible(true)}
+            onMouseLeave={() => setIsCategoryVisible(false)}
+            style={{ display: isCategoryVisible ? "block" : "none" }}
+          >
+            <div className="parent-header-c">
+              <div className="header-subcategory-category">
+                {" "}
+                Casual Shoes
+                <ul className="subcategory-list">
+                  <li className="subcategory-item">
+                    <Link to="/adidas">Adidas</Link>
+                  </li>
+                  <li className="subcategory-item">
+                    <Link to="/nike">Nike</Link>
+                  </li>
+                  <li className="subcategory-item">
+                    <Link to="/converse">Converse</Link>
+                  </li>
+                  <li className="subcategory-item">
+                    <Link to="/vans">Vans</Link>
+                  </li>
+                  <li className="subcategory-item">
+                    <Link to="/new-balance">New Balance</Link>
+                  </li>
+                </ul>
+              </div>
+              <div className="header-subcategory-category">
+                Sports & Athletic Shoes
+                <ul className="subcategory-list">
+                  <li className="subcategory-item">
+                    <Link to="/adidas">Adidas</Link>
+                  </li>
+                  <li className="subcategory-item">
+                    <Link to="/nike">Nike</Link>
+                  </li>
+                  <li className="subcategory-item">
+                    <Link to="/reebok">Reebok</Link>
+                  </li>
+                  <li className="subcategory-item">
+                    <Link to="/under-armour">Under Armour</Link>
+                  </li>
+                  <li className="subcategory-item">
+                    <Link to="/asics">ASICS</Link>
+                  </li>
+                </ul>
+              </div>
+              <div className="header-subcategory-category">
+                Formal Shoes
+                <ul className="subcategory-list">
+                  <li className="subcategory-item">
+                    <Link to="/adidas">Adidas</Link>
+                  </li>
+                  <li className="subcategory-item">
+                    <Link to="/nike">Nike</Link>
+                  </li>
+                  <li className="subcategory-item">
+                    <Link to="/converse">Converse</Link>
+                  </li>
+                  <li className="subcategory-item">
+                    <Link to="/vans">Vans</Link>
+                  </li>
+                  <li className="subcategory-item">
+                    <Link to="/new-balance">New Balance</Link>
+                  </li>
+                </ul>
+              </div>
+              <div className="header-subcategory-category">
+                Boots
+                <ul className="subcategory-list">
+                  <li className="subcategory-item">
+                    <Link to="/dr-martens">Dr. Martens</Link>
+                  </li>
+                  <li className="subcategory-item">
+                    <Link to="/timberland">Timberland</Link>
+                  </li>
+                  <li className="subcategory-item">
+                    <Link to="/ugg">UGG</Link>
+                  </li>
+                  <li className="subcategory-item">
+                    <Link to="/the-north-face">The North Face</Link>
+                  </li>
+                  <li className="subcategory-item">
+                    <Link to="/merrell">Merrell</Link>
+                  </li>
+                </ul>
+              </div>
+              <div className="header-subcategory-category">
+                Traditional & Cultural Shoes
+                <ul className="subcategory-list">
+                  <li className="subcategory-item">
+                    <Link to="/dr-martens">Dr. Martens</Link>
+                  </li>
+                  <li className="subcategory-item">
+                    <Link to="/timberland">Timberland</Link>
+                  </li>
+                  <li className="subcategory-item">
+                    <Link to="/ugg">UGG</Link>
+                  </li>
+                  <li className="subcategory-item">
+                    <Link to="/the-north-face">The North Face</Link>
+                  </li>
+                  <li className="subcategory-item">
+                    <Link to="/merrell">Merrell</Link>
+                  </li>
+                </ul>
+              </div>
             </div>
           </div>
-          <div className="header-category"><Link to={"/OnlineAuth"}>Online auth</Link></div>
-         <Link to={'/about'}> <div className="header-category">About Us</div></Link>
-          <div className="header-category">Sell on Glamy</div>
-          <div className="header-category">Glamy Blog</div>
+          <div className="header-category">
+            <Link to={"/OnlineAuth"}>Online auth</Link>
+          </div>
+          <Link to={"/about"}>
+            {" "}
+            <div className="header-category">About Us</div>
+          </Link>
+          <div
+            className="header-category"
+            onClick={() => alert("On Hold.. available soon...")}
+          >
+            Sell on Glamy
+          </div>
+          <Link to={"/glamy-blog"}>
+            {" "}
+            <div className="header-category">Glamy AI</div>
+          </Link>
         </div>
+
         <div className="header-profile">
-          <SentimentSatisfiedAltIcon className="header-icon-z" />
+       <Link to="/login">   <SentimentSatisfiedAltIcon className="header-icon-z" /></Link>
         </div>
+
         <div className="header-wishlist">
-          <HeartBrokenIcon className="header-icon-z"  />
+          <HeartBrokenIcon className="header-icon-z" />
         </div>
       </div>
       <div className="header-body-banner">
@@ -139,8 +221,7 @@ const Header = () => {
           <ArrowForwardIcon className="header-body-banner-arrow-icon" />
         </div>
       </div>
-
-      </>
+    </>
   );
 };
 

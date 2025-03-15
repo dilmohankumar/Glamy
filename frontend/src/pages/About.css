@@ -93,42 +93,271 @@
     display: flex;
     flex-direction: column;
   }
- 
 }
 
-.state-of-the-art-lab-container{
-    display: flex;
-    flex-direction: column;
+.state-of-the-art-lab-container {
+  display: flex;
+  flex-direction: column;
 }
-.state-of-the-art-lab{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    padding: 2rem;
-    padding-left: 4rem;
-    padding-right: 4rem;
-    background-color: black;
-    color: white;
-
+.state-of-the-art-lab {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 2rem;
+  padding-left: 4rem;
+  padding-right: 4rem;
+  background-color: black;
+  color: white;
 }
-.state-of-the-art-lab-header{
-    font-size: xxx-large;
+.state-of-the-art-lab-header {
+  font-size: xxx-large;
 }
-.state-of-the-art-lab-paragraph{
-    font-size: larger;
-    letter-spacing: 1px;
-    line-height: 2rem;
+.state-of-the-art-lab-paragraph {
+  font-size: larger;
+  letter-spacing: 1px;
+  line-height: 2rem;
 }
-.state-of-the-art-lab-test{
-    font-style: italic;
+.state-of-the-art-lab-test {
+  font-style: italic;
+}
+.global-sourcing-header {
+  padding-left: 4rem !important;
 }
 @media screen and (max-width: 1000px) {
-    .state-of-the-art-lab{
-        display: flex;
-        flex-direction: column;
-      }
-     .state-of-the-art-lab-image{
-        width: 100% !important;
-        height: auto;
-      }
+  .state-of-the-art-lab {
+    display: flex;
+    flex-direction: column;
+  }
+  .state-of-the-art-lab-image {
+    width: 100% !important;
+    height: auto;
+  }
 }
+.global-sourcing-header {
+  padding: 2rem;
+
+  font-size: xxx-large;
+  color: rgb(16, 187, 230);
+  margin-bottom: 0;
+}
+@media (max-width: 1024px) {
+  .global-sourcing-header {
+    padding: 1.5rem;
+
+    font-size: xx-large;
+  }
+}
+
+@media (max-width: 768px) {
+  .global-sourcing-header {
+    padding: 1rem;
+
+    font-size: x-large;
+  }
+}
+
+@media (max-width: 480px) {
+  .global-sourcing-header {
+    padding: 0.5rem;
+
+    font-size: large;
+    padding-left: 4rem;
+  }
+}
+
+.global-sourcing-subheader {
+  padding: 2rem;
+  padding-left: 4rem;
+  font-size: xxx-large;
+  font-weight: 900;
+  margin: 0;
+}
+.global-sourcing-content-im {
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+  gap: 1rem;
+}
+
+@media (max-width: 1024px) {
+  .global-sourcing-subheader {
+    font-size: 1.8rem;
+  }
+  .global-sourcing-image {
+    width: 60%;
+  }
+}
+
+@media (max-width: 768px) {
+  .global-sourcing-subheader {
+    font-size: 1.5rem;
+  }
+  .global-sourcing-content-im {
+    flex-direction: column;
+  }
+  .global-sourcing-image {
+    width: 80%;
+  }
+}
+
+@media (max-width: 480px) {
+  .global-sourcing-subheader {
+    font-size: 1.2rem;
+  }
+  .global-sourcing-image {
+    width: 90%;
+  }
+}
+
+.sourcing-countries-header {
+  padding: 2rem;
+  padding-left: 4rem;
+  font-size: xxx-large;
+  font-weight: 900;
+}
+
+.sourcing-countries-content-imm {
+  display: flex;
+  justify-content: center;
+}
+
+@media (max-width: 1024px) {
+  .sourcing-countries-header {
+    font-size: xx-large;
+  }
+}
+
+@media (max-width: 768px) {
+  .sourcing-countries-header {
+    font-size: x-large;
+  }
+}
+
+@media (max-width: 480px) {
+  .sourcing-countries-header {
+    font-size: large;
+  }
+}
+
+.payment-methods-container{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 2rem;
+  padding-left: 4rem;
+  padding-right: 4rem;
+}
+.payment-methods-header{
+  font-size: xxx-large;
+    font-weight: 900;
+}
+
+.payment-methods-description{
+  font-size: x-large;
+    font-weight: 400;
+}
+
+.payment-methods-container-p{
+  display: flex;
+  padding-left: 4rem;
+  justify-content: space-between;
+  padding-right: 4rem;
+}
+
+@media (max-width: 768px) {
+  .payment-methods-header {
+    font-size: 1.5rem;
+  }
+
+  .payment-methods-description {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .payment-methods-header {
+    font-size: 1.2rem;
+  }
+
+  .payment-methods-description {
+    font-size: 0.9rem;
+    margin: 0;
+  }
+  .payment-methods-container{
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.stay-with-poizon-header{
+  display: flex;
+  padding: 2rem;
+  padding-left: 4rem;
+  font-size: xxx-large;
+  color: rgb(16, 187, 230);
+  font-weight: 900;
+  letter-spacing: 1px;
+  margin-bottom: 0;
+}
+
+@media (max-width: 768px) {
+  .stay-with-poizon-header {
+    font-size: 2rem;
+  }
+
+  .brand-history-header {
+    font-size: 1.6rem;
+  }
+
+  .brand-history-year {
+    font-size: 1.4rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .stay-with-poizon-header {
+    font-size: 1.5rem;
+  }
+
+  .brand-history-header {
+    font-size: 1.4rem!important;
+  }
+
+  .brand-history-year {
+    font-size: 1.2rem;
+  }
+}
+
+.brand-history-container {
+  display: flex;
+  flex-direction: column;
+  padding: 30px 20px;
+}
+.brand-history-container{
+  padding-left: 4rem;
+}
+
+.brand-history-header {
+  font-size: xxx-large;
+  font-weight: 900;
+  margin-bottom: 10px;
+}
+
+.brand-history-year {
+  font-size: 1.8rem;
+  color: #666;
+  font-weight: 600;
+  margin: 0;
+}
+
+
+.stay-with-poizon-image {
+  width: 100%;
+  height:auto;
+
+}
+
+
+
+
