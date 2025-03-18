@@ -1,50 +1,144 @@
-.loginContainer-parent-login{
-    background: #e0e1e3a1;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 2rem 0 2rem 0;
-    justify-content: center;
-    
+.loginContainer-parent-login {
+  background: #e0e1e3a1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem 0 2rem 0;
+  justify-content: center;
 }
-.loginContainer-login{
-    background: white;
-    padding: 2rem;
-    border-radius: 10px;
-    box-shadow: 2px 2px 10px 2px #04040447;
-    width: 35%;
-    height: auto;
+.loginContainer-login {
+  background: white;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 2px 2px 10px 2px #04040447;
+  width: 35%;
+  height: auto;
 }
-.logo-login{
-    display: flex;
-    justify-content: center;
-    margin-bottom: 2rem;
+.logo-login {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2rem;
 }
-.inputFields-login{
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-    margin-bottom: 1rem;
- 
+.inputFields-login {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-bottom: 1rem;
 }
-.inputField-login{
-    padding: 10px;
-    border: 1px solid;
-    border-color: #94929280;
-    border-radius: 5px;
-    width: -webkit-fill-available;
-   
+.inputField-login {
+  padding: 10px;
+  border: 1px solid;
+  border-color: #94929280;
+  border-radius: 5px;
+  width: -webkit-fill-available;
+}
+.login-visibilityIcon,
+.login-visibilityoffIcon {
+  cursor: pointer;
 
-}
-.login-visibilityIcon,.login-visibilityoffIcon{
-    cursor: pointer;
-    position: relative;
-    width: -webkit-fill-available;
-    position: absolute;
+  margin-right: 10px;
+  position: absolute;
 }
 
-
-.passwordVisibilityToggle{
-    display: flex;
-    align-items: center;
+.passwordVisibilityToggle {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+}
+.captchaContainer {
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+  align-items: center;
+}
+.captchaInput {
+  width: 20px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+.captchaRefreshButton {
+  border: none;
+  background: none;
+  padding: 0;
+  background: black;
+  color: white;
+  border-radius: 6px;
+  cursor: pointer;
+  text-align: center;
+  display: flex;
+  padding: 2px;
+}
+.captchaRefreshIcon {
+  width: 15px !important;
+  height: auto !important;
+}
+.captchaQuestion {
+  margin: 0;
+}
+.captchaSubmitButton {
+  background: #000;
+  color: white;
+  border-radius: 5px;
+  border: 1px solid black;
+  padding: 3px;
+  cursor: pointer;
+  font-weight: 900;
+}
+.captchaMessage {
+  margin: 10px 0 10px 0;
+}
+.loginButton-login {
+  border: 1px solid black;
+  background: black;
+  color: white;
+  user-select: none;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  cursor: pointer;
+  padding: 10px;
+  border-radius: 5px;
+  font-size: medium;
+  font-weight: 800;
+}
+.forgotSignUp-login {
+  display: flex;
+  fex-direction: row;
+  justify-content: space-between;
+  font-size: small;
+  font-weight: 800;
+  color: #000;
+}
+.forgotPassword-login {
+  cursor: pointer;
+}
+.signUp-login {
+  cursor: pointer;
+}
+.signInWithContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.signInWithText {
+  color: #757373e6;
+  font-weight: 600;
+  font-size: small;
+}
+.googleLogin-login {
+  background: black;
+  color: white;
+  padding: 5px;
+  border-radius: 14px;
+  user-select: none;
+  cursor: pointer;
+  width: 18px;
+  height: auto;
+  align-items: center;
+  text-align: c;
+  justify-content: center;
+  display: flex;
+  text-align: center;
 }
